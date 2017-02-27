@@ -554,8 +554,67 @@ color:#4eaeff;
     
     
 }
+
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1026px) {
+  .hamburger
+{
+    display:flex;
+  position: relative;
+    right:5%;
+    border:none;
+    margin:0;
+    padding:0;
+z-index:1000000;
+    font-size:2rem;
+    background:rgba(255,255,255,0.1);
+    
+    
+}
+.menu
+{
+    display:none;
+}
+
+
+    .menu-mobile-list
+    {
+    display:none;
+    list-style-type: none;
+    text-decoration:none;
+    flex-direction: column;
+    align-items:center;
+    margin:0;
+    width:100%;
+    padding:0;
+    z-index:10000;
+    position:absolute;
+  top:15vh;
+    background-color:white;
+    box-sizing: border-box;
+        height:inherit;
+    }
+   
+.menu-item
+{
+    display:flex;
+      border:1px solid #D1D6D6;
+    width:100%;
+   justify-content: center;
+    padding:2%;
+    
+}
+
+.menu-item:nth-child(2),.menu-item:nth-child(3),.menu-item:nth-child(4)
+{
+    border-top:none;
+    
+}
+    }
+
+ /*end of mobile menu*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
+    /*mobile menu*/
  .hamburger
 {
     display:flex;
@@ -610,8 +669,20 @@ z-index:1000000;
     
 }
 
- 
+ /*end of mobile menu*/
 
+    .text-top
+{
+    text-align:right;
+    font-weight:300;
+    position:absolute;
+    bottom:5%;
+   right:10%;
+    margin-right:2%;
+    font-size:1.6rem;
+    
+    
+}
     .second
 {
      background-color:#efeee9;
@@ -797,5 +868,60 @@ margin:0;
     
 }
     
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
- 
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1026px) {
+  .hamburger
+{
+    display:flex;
+  position: relative;
+    right:5%;
+    border:none;
+    margin:0;
+    padding:0;
+z-index:1000000;
+    font-size:2rem;
+    background:rgba(255,255,255,0.1);
+    
+    
+}
+.menu
+{
+    display:none;
+}
+
+
+    .menu-mobile-list
+    {
+    display:none;
+    list-style-type: none;
+    text-decoration:none;
+    flex-direction: column;
+    align-items:center;
+    margin:0;
+    width:100%;
+    padding:0;
+    z-index:10000;
+    position:absolute;
+  top:15vh;
+    background-color:white;
+    box-sizing: border-box;
+        height:inherit;
+    }
+   
+.menu-item
+{
+    display:flex;
+      border:1px solid #D1D6D6;
+    width:100%;
+   justify-content: center;
+    padding:2%;
+    
+}
+
+.menu-item:nth-child(2),.menu-item:nth-child(3),.menu-item:nth-child(4)
+{
+    border-top:none;
+    
+}
+    }
+
+ /*end of mobile menu*/
