@@ -646,6 +646,7 @@ z-index:1000000;
     width:100%;
    justify-content: center;
     padding:2%;
+    text-align:center;
     
 }
  
@@ -666,7 +667,52 @@ z-index:1000000;
     }
 
  /*end of mobile menu*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.second
+{
+    height:65vh;
+}
+.panel
+{
+    height:50vh;
+    width:90vw;
+    padding:6%;
+}
+
+.foto-wrapper
+{
+    height:60vh;
+}
+
+.wrapper-text
+{
+    padding-right:10%;
+}
+.big-wrapper
+{
+   height:40vh;
+}
+
+.info-bar
+{
+    padding:3%;
+}
+
+.last
+{
+    height:30vh;
+}
+
+.footer-info >p
+{
+    font-size:0.9rem;
+   
+}
+
+.footer-info
+{
+    justify-content: center;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 580px) {
 
     /*mobile menu*/
  .hamburger
@@ -908,10 +954,19 @@ margin:0;
     display:flex;
     background-color: #353535;
     width:100%;
-    height:30vh;
+    height:25vh;
     padding-left:10%;
     box-sizing: border-box;
 }
+    .footer-info
+    {
+        justify-content: center;
+    }
+    .footer-info > p
+    {
+        font-size:0.7rem;
+        
+    }
     
     .map
 {
