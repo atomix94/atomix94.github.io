@@ -19,10 +19,10 @@
     <div class="navbar">
      
          <ul class="menu-mobile-list">
-           <li class="menu-item">Portfolio</li>
-            <li class="menu-item">About</li> 
-           <li class="menu-item">Articles</li> 
-             <li class="menu-item">Contact</li>
+           <li class="menu-mobile-item-">Portfolio</li>
+            <li class="menu-mobile-item-">About</li> 
+           <li class="menu-mobile-item-">Articles</li> 
+             <li class="menu-mobile-item-">Contact</li>
               
         </ul>
       
@@ -36,7 +36,7 @@
        
        
        
-    <ul class="menu">
+    <ul class="menu2">
     
             <li class="menu-item">Articles</li> 
              <li class="menu-item">Contact</li>
@@ -61,7 +61,7 @@ consectetur adipisicing elit.</p>
        <div class="panel">
            <h1>AARHUS LEJERBOLIGER</h1>
            
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum turpis sit amet tellus aliquet gravida sit amet vitae enim. Praesent dapibus consectetur massa, sit amet fringilla diam imperdiet ac. Pellentesque lobortis nec dolor ac porta. Nullam at ipsum et ante mattis blandit. Cras venenatis leo est, a sollicitudin lectus bibendum vitae. Suspendisse potenti. Ut quis mattis eros. Nulla sit amet ultrices erat, quis pellentesque turpis. Vestibulum metus justo, fringilla ac tristique in, aliquam eget sem. Proin viverra ipsum at nisi varius rutrum.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum turpis sit amet tellus aliquet gravida sit amet vitae enim. Praesent dapibus consectetur massa, sit amet fringilla diam imperdiet ac. Pellentesque lobortis nec dolor ac porta. Nullam at ipsum et ante mattis blandit. Cras venenatis leo est, a sollicitudin lectus bibendum vitae. Suspendisse potenti. Ut quis mattis eros. Nulla sit amet ultrices erat, quis pellentesque turpis. Vestibulum metus justo.</p>
            
            <div class="view-button">
               <span><a href=#>View Project</a></span> 
@@ -166,18 +166,33 @@ consectetur adipisicing elit.</p>
     
      <div class="info-bar">
          <h3>Exceptur sit occaecat cupidat non proident</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis rhoncus tortor. Integer suscipit ex tortor, sed dapibus ligula viverra ut. Curabitur auctor enim felis, nec sollicitudin ex tincidunt et. Suspendisse aliquam purus urna, id consectetur mauris lobortis et. </p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis rhoncus tortor. Integer suscipit ex tortor, sed dapibus ligula viverra ut.Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.  
+         Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.   </p>
           <a href="#">Learn More</a>
      </div>  
          <div class="info-bar">
          <h3>Exceptur sit occaecat cupidat non proident</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis rhoncus tortor. Integer suscipit ex tortor, sed dapibus ligula viverra ut. Curabitur auctor enim felis, nec sollicitudin ex tincidunt et. Suspendisse aliquam purus urna, id consectetur mauris lobortis et. </p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis rhoncus tortor. Integer suscipit ex tortor, sed dapibus ligula viverra ut.Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.  
+         Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.  </p>
          <a href="#">Learn More</a>
          
      </div>   
         <div class="info-bar">
          <h3>Exceptur sit occaecat cupidat non proident</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis rhoncus tortor. Integer suscipit ex tortor, sed dapibus ligula viverra ut. Curabitur auctor enim felis, nec sollicitudin ex tincidunt et. Suspendisse aliquam purus urna, id consectetur mauris lobortis et. </p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis rhoncus tortor. Integer suscipit ex tortor, sed dapibus ligula viverra ut.Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.  
+         Sed dapibus ligula viverra ut.
+         Sed dapibus ligula viverra ut.    </p>
           <a href="#">Learn More</a>
      </div>   
     </div>
@@ -205,8 +220,12 @@ even slightly believable.</p>
 <footer>
     <div class="footer">
         <div class="icons">
-        <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook-square" aria-hidden="true"></i><i class="fa fa-instagram" aria-hidden="true"></i>
-<i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <a href="http://twitter.com"alt="twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i></a><a href="http://facebook.com"alt="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+               <a href="http://instagram.com"alt="insta"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+<a href="http://instagram.com"alt="insta">
+         
+         <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
           
             </div>
        <p>Copyright 2017</p>
@@ -277,7 +296,7 @@ even slightly believable.</p>
             
             
         });
-           //end of sixth anim
+           //end of fifth anim
          $(".hover-parent6").mouseenter(function(){
             $(".text-on-photo6").fadeIn(500);
          
@@ -289,6 +308,7 @@ even slightly believable.</p>
             
             
         });
+        //end of sixth anim
         $(".hamburger").click(function()
         {
             $(".menu-mobile-list").slideToggle( "slow");
@@ -296,10 +316,16 @@ even slightly believable.</p>
             
              });
         
+        
+         $(window).on("scroll touchmove", function () {
+  $('nav').toggleClass('small', $(document).scrollTop() > 0);
+});
+     
         });
+ 
      
-     
-    </script>
+           </script>
+           
 </body>
 
 
