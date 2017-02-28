@@ -15,7 +15,7 @@ nav
     display:flex;
     
     background:rgba(255,255,255,0.5);
-   
+   z-index:999999;
 box-sizing: border-box;
     width:100vw;
     position:relative;
@@ -24,11 +24,24 @@ box-sizing: border-box;
     
 }
 
+.navbar.small
+{
+    
+    display:flex;
+    
+    background:rgba(255,255,255,0.5);
+   z-index:999999;
+box-sizing: border-box;
+    width:100vw;
+    position:relative;
+    height:8vh;
+    position: fixed;
+}
 .brand
 {
     display:flex;
     align-items:center;
-    font-size:2rem;
+    font-size:1.5rem;
     justify-content: center;
     width:100%;
     letter-spacing:6px;
@@ -56,9 +69,22 @@ box-sizing: border-box;
     font-size:70%;
     font-weight: 500;
     letter-spacing:4px;
+    margin-left:20%;
     
     
-    
+}
+.menu2
+{ display:flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    padding:0;
+    width:100%;
+    text-transform: uppercase;
+    font-size:70%;
+    font-weight: 500;
+    letter-spacing:4px;
+    margin-right:20%;
 }
    .menu-mobile
     {
@@ -125,8 +151,8 @@ display:none;
 .panel
 {
 display:flex;
-width:80%;
-    height:70%;
+width:70vw;
+    height:75%;
     background-color: white;
     align-self:center;
     flex-direction: column;
@@ -368,17 +394,18 @@ display:flex;
 .text-section
 {
     display:flex;
-    padding:20%;
+    padding:7%;
     background-color:#efeee9;
     font-weight: 100;
     font-size:2rem;
-    
+    height:40vh;
 }
 .text-section > p
 {
     display:flex;
     justify-content: center;
     text-align: center;
+    align-self:center;
     
 }
 .buttons
@@ -406,9 +433,15 @@ background-image: url("button.png");
 {
     display:flex;
     flex-direction: column;
-    padding:5%;
+    padding:5% 40% 5% 1%;
+     
     
-    
+}
+.wrapper-text > p
+{
+   margin-top:1%;
+    text-align:left;
+    font-weight: 200;
 }
 .wrapper-text >h3
 
@@ -430,17 +463,17 @@ flex-direction: row;
 {
 display:flex;
     background-color:#efeee9;
-    justify-content: space-between;
+    justify-content: space-around;
     padding:5%;
 }
 .info-bar
 {
     display:flex;
     flex-direction: column;
-    padding:5%;
+    padding:4%;
 background-color:white;
     height:100%;
-    width:30%;
+    width:25%;
     align-items: center;
     
     box-sizing: border-box;
@@ -486,6 +519,8 @@ color:#4eaeff;
     margin-left:10%;
     padding-top:3%;
      font-size:0.9rem;
+    margin-right:8%;
+    
    
   
     
@@ -499,6 +534,8 @@ color:#4eaeff;
     line-height: 180%;
     font-weight: 300;
     font-size:0.9rem;
+    text-align:justify;
+   
 }
 .footer-info > h4
 {
@@ -546,15 +583,18 @@ color:#4eaeff;
     flex-direction:row;
 }
 
-.icons > i
-{    display:flex;
-    justify-content: space-between;
-    padding-left:20%;
-    font-size:120%;
-    
-    
-}
 
+
+
+.icons a
+{
+    display:flex;
+    color:black;
+    text-decoration:none; 
+    justify-content: space-between;
+    padding-left:15%;
+    font-size:120%;
+}
  @media only screen and (min-device-width : 768px) and (max-device-width : 1026px) {
   .hamburger
 {
@@ -633,7 +673,10 @@ z-index:1000000;
 {
     display:none;
 }
-
+.menu2
+    {
+        display:none;
+    }
 
     .menu-mobile-list
     {
@@ -676,10 +719,12 @@ z-index:1000000;
     text-align:right;
     font-weight:300;
     position:absolute;
-    bottom:5%;
-   right:10%;
+    bottom:8%;
+   right:5%;
     margin-right:2%;
     font-size:1.6rem;
+    display:flex;
+    flex-wrap:wrap;
     
     
 }
@@ -697,8 +742,8 @@ z-index:1000000;
     .panel
 {
 display:flex;
-width:80vw;
-    height:35vh;
+width:85vw;
+    height:40vh;
     background-color: white;
     align-self:center;
     flex-direction: column;
@@ -715,6 +760,7 @@ width:80vw;
     font-weight: 100;
     font-size:2.7rem;
     flex-wrap:wrap;
+    margin:0;
 }
 
 .panel > p
@@ -722,7 +768,7 @@ width:80vw;
     padding:2% 4%;
     font-weight:300;
     flex-wrap:wrap;
-    font-size:1.5rem;
+    font-size:1.4rem;
    
 }
     
@@ -766,71 +812,7 @@ display:flex;
   
     
 }
-    #first.foto
-{
-    display:flex;
-    background-image:url('foto1.png');
-    background-size:cover;
-    width:50%;
-     background-position: center;
-   background-repeat: no-repeat;
-  
-    
-}
 
-#second.foto
-{
-    display:flex;
-    background-image:url('foto2.png');
-    background-size:cover;
-     width:50%;
-     background-position: center;
-     background-repeat: no-repeat;
-  
-}
-
-#third.foto
-{
-    display:flex;
-    background-image:url('foto3.png');
-     background-size:cover;
-    width:50%;
-     background-position: center;
-     background-repeat: no-repeat;
-  
-}
-#fourth.foto
-{
-    display:flex;
-    background-image:url('foto4.png');
-      background-size:cover;
-   width:100%;
-    background-position: center;
-     background-repeat: no-repeat;
-  
-}
-
-#fifth.foto
-{
-    display:flex;
-    background-image:url('foto5.png');
-      background-size:cover;
-    width:100%;
-     background-position: center;
-     background-repeat: no-repeat;
-  
-}
-
-#sixth.foto
-{
-    display:flex;
-    background-image:url('foto6.png');
-      background-size:cover;
-     width:100%;
-     background-position: center;
- background-repeat: no-repeat;
-  
-}
 
     .foto:hover
     {    
@@ -838,6 +820,16 @@ display:flex;
         overflow:hidden;
         
        
+    }
+    
+    .text-section
+    {
+        display:flex;
+        padding:7%;
+        background-color:#efeee9;
+        font-weight:100;
+        font-size:2rem;
+        height:30vh;
     }
 .big-wrapper
 {
@@ -859,14 +851,36 @@ flex-direction: row;
     justify-content: center;
     font-weight: 200;
 }
-
+.wrapper-text
+    {
+display:flex;
+    padding:0;}
+    .wrapper-text > p
+    {
+        display:flex;
+        padding:0;
+        font-size:1rem;
+        font-weight: 200;
+    }
     .wrapper-text > h3
 
 {
 margin:0;  
     font-weight: 300;
 }
+  .info-wrapper
+    {
+        display:flex;
+        padding:3%;
+    }
     
+    .info-bar
+    {
+        display:flex;
+        height:20%;
+        padding:3%;
+        
+    }
     .last
 {
     display:flex;
