@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css">
           <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-           
+          <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
            </head>
 	
@@ -308,8 +308,31 @@ even slightly believable.</p>
              });
         
         
-         $(window).on("scroll touchmove", function () {
-  $('nav').toggleClass('small', $(document).scrollTop() > 0);
+         $(function(){
+    $('.navbar').data('size','big');
+});
+
+$(window).scroll(function(){
+    if($(document).scrollTop() > 0)
+    {
+        if($('.navbar').data('size') == 'big')
+        {
+            $('.navbar').data('size','small');
+            $('.navbar').stop().animate({
+                height:'5vh'
+            },600);
+        }
+    }
+    else
+    {
+        if($('.navbar').data('size') == 'small')
+        {
+            $('.navbar').data('size','big');
+            $('.navbar').stop().animate({
+                height:'15vh'
+            },600);
+        }  
+    }
 });
      
         });
