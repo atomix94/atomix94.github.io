@@ -44,7 +44,7 @@
              </div> 
     </nav>
 </header>
-<section>
+<section id="first">
    <div class="first">
       <p class="text-top">Lorem ipsum dolor sit amet,consectetur ipsum dolor sit amet<br>
 consectetur adipisicing elit.</p>
@@ -55,7 +55,7 @@ consectetur adipisicing elit.</p>
     
     
 </section>
-<section>
+<section id ="second">
     
     <div class="second">
        <div class="panel">
@@ -70,7 +70,7 @@ consectetur adipisicing elit.</p>
        
    </div>
 </section>
-<section>
+<section id="foto-section">
     <div class="foto-wrapper">
      <div class="half">
        <div class="hover-parent1">
@@ -126,7 +126,7 @@ consectetur adipisicing elit.</p>
         
     </div>
     </section>
-    <section>
+    <section id="quote-section">
         <div class="text-section">
             
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis rhoncus tortor. Integer suscipit ex tortor, sed dapibus ligula viverra ut. </p>
@@ -135,7 +135,7 @@ consectetur adipisicing elit.</p>
         
     </section>
     
-    <section>
+    <section id="triple">
         <div class="big-wrapper">
         <div class="buttons">
             
@@ -160,7 +160,7 @@ consectetur adipisicing elit.</p>
         </div>
     </section>
     
-    <section>
+    <section id="info">
     <div class="info-wrapper">
         
     
@@ -310,10 +310,12 @@ even slightly believable.</p>
             
              });
         
+ 
         
+         if ($(window).width() >= 1025) {  
          $(function(){
     $('.navbar').data('size','big');
-});
+
 
 $(window).scroll(function(){
     if($(document).scrollTop() > 0)
@@ -337,8 +339,12 @@ $(window).scroll(function(){
         }  
     }
 });
+             
+ 
      
         });
+           };
+ });
  
      
            </script>
