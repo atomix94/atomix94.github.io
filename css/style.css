@@ -18,7 +18,7 @@ nav
    z-index:999999;
 box-sizing: border-box;
     width:100vw;
-    position:relative;
+    
     height:15vh;
     position: fixed;
     
@@ -780,7 +780,7 @@ ul li
    justify-content: center;
     padding:2%;
     background-color:white;
-    justify-content: center;
+   
     
 }
 
@@ -1018,7 +1018,7 @@ ul li
    justify-content: center;
     padding:2%;
     background-color:white;
-    justify-content: center;
+    
     font-size:0.7rem;
     
 }
