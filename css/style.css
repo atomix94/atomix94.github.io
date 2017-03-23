@@ -512,25 +512,67 @@ box-shadow: 0;
 .portfolio-container
 {
 display:flex;
-flex-direction: row;}
+flex-direction: column;
+}
 
 
 
-.portfolio-image
+.portfolio-images
 {   
  
-     
+     display:flex;
+    flex-direction: row;
     width:100vw;
-    height:400px;
+    height:350px;
     overflow:hidden;
+    justify-content: space-around;
     
 }
 
 .portfolio
 {   
-    width:350px;
-    height:auto;
+    max-width:400px;
+    max-height:300px;
   
+     
+}
+
+.scale-wrapper
+{    background-image: url("first_icon_.jpg");
+    background-repeat: no-repeat;
+    background-size:350px 250px;
+    width:350px;
+    
+    height:350px;
+    overflow: hidden;
+   
+    
+}
+
+.scale-wrapper:nth-child(2)
+{
+    background-image: url("second_icon_pop.jpg");
+    background-repeat: no-repeat;
+    background-size:350px 250px;
+}
+.scale-wrapper p
+{
+    display:none;
+}
+.scale-wrapper:hover p
+{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:72%;
+    padding:0;
+    margin:0;
+     background-color:rgba(0,0,0,0.7);
+    color:white;
+   
+    cursor: pointer;
+   
+    
      
 }
 
@@ -698,7 +740,7 @@ and (max-device-width : 1366px) and (orientation:portrait) {
 
 /*ipad pro landscape*/
 @media only screen 
-and (min-device-width : 1366px) 
+and (max-device-width : 1366px) 
 and (orientation:landscape) { 
 
 .text
