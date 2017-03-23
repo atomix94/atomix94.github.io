@@ -933,6 +933,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     background-size:contain;
     background-position: center;
 	background-attachment:fixed;
+    background-repeat: no-repeat;
 	height:100vh;
     background-position: center;
     
