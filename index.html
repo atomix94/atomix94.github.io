@@ -6,14 +6,18 @@
         <title>Masiarowe Wypociny</title>
         <meta name="description" content="Moja testowa strona,kolejna w zestawieniu.">
         <link rel="stylesheet" href="css/style.css">
-        <link href="css/animations.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/animations-ie-fix.css">
+        <!-- <link href="css/animations.css" rel="stylesheet"> -->
+        <!-- <link rel="stylesheet" href="css/animations-ie-fix.css"> -->
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
      <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/fontello.css" type="text/css" />
         
- 
+         <link rel="stylesheet" href="css/aos-master/dist/aos.css" />
+       <head>
+  
+</head>
+       
 </head>
         
         
@@ -30,9 +34,9 @@
     <body>
     
     <header>
-      <div class="header animatedParent animateOnce">
+      <div class="header"  >
           
-        <div class="welcome-stuff animated fadeIn ">
+        <div class="welcome-stuff" data-aos="fade">
         <div class="foto">
 			
 			<img src="img/japa.jpg"> 
@@ -53,7 +57,7 @@
 		
 		
 		<section class="jeden">
-		<p class="text">Jestem początkującym Front-End Developerem który próbuję swoich sił.Moje umiejętności stale się powiększają.
+		<p class="text" data-aos="fade-down">Jestem początkującym Front-End Developerem który próbuję swoich sił.Moje umiejętności stale się powiększają.
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et aliquam libero. Fusce imperdiet nibh arcu, a tristique lectus vestibulum at. Suspendisse porta purus eu fermentum placerat. Praesent convallis nisi eu leo malesuada tristique. Vestibulum tincidunt elit at leo consequat, non hendrerit nulla accumsan. Cras accumsan dui quis urna vestibulum aliquam. Sed in ante rutrum, ultrices augue vel, cursus elit. Fusce maximus massa id mi vehicula aliquam. 
 		</p>
         </section>
@@ -79,14 +83,14 @@
 </div>
             </div>-->
             
-		<div class="images animatedParent" >
+		<div class="images" data-aos="fade" >
         <p class="images-desc">Technologie których używam:</p>
-            <div class="logo animated fadeIn delay-400"   >
+            <div class="logo animated fadeIn delay-1800"   >
             <img class="logo-image" src="img/html.png"/>
             <img class="logo-image" src="img/css256.png">
           <img class="logo-image" src="img/bootstrap.jpg">
             </div>
-             <div class="logo animated fadeIn delay-600" >
+             <div class="logo animated fadeIn delay-1800" >
               <img class="logo-image" src="img/sass.png">
               <img class="logo-image" src="img/jquery.jpg">
                
@@ -94,10 +98,10 @@
     
             
             
-        <p class="images-desc">Czego się uczę: </p>
+        <p class="images-desc" >Czego się uczę: </p>
             
             
-            <div class="logo animated fadeIn delay-1600">
+            <div class="logo" data-aos="fade">
                <img src="img/js.jpg"> 
                 
                 
@@ -111,10 +115,10 @@
         
         </section>
         <section>
-            <div class="portfolio-container animatedParent">
-            <p class="images-desc animated fadeIn">Moje dotychczasowe projekty:</p>
+            <div class="portfolio-container "data-aos="fade">
+            <p class="images-desc ">Moje dotychczasowe projekty:</p>
             
-            <div class="portfolio-images animated fadeIn delay-500">
+            <div class="portfolio-images animated fadeIn delay-3100">
                <div class="scale-wrapper">
                  <a href="http://atomix94.github.io/weeklyforms.github.io" target="_blank">
                  <p>Projekt formularzy</p>
@@ -137,10 +141,14 @@
 		
 		
            <div class="icons">
-            <i class="icon-facebook-rect">
-            </i>
-             <i class=" icon-github-text">
-            </i>
+            
+               <a href="http://facebook.com"><i class="icon-facebook-rect"></i></a>
+            
+             
+            
+                 <a href="http://atomix94.github.io"><i class="icon-github-text"></i>
+                 </a>
+           
             </div>
           
            
@@ -172,9 +180,16 @@
     
     
     
-    <script src="css/css3-animate-it.js">
+    <!-- <script src="css/css3-animate-it.js">
+        
+    </script> -->
     
-    </script>
+    <script src="css/aos-master/dist/aos.js"></script>
+    
+     <script>
+    AOS.init();
+  </script>
+    
     
     
     </body>
