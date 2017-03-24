@@ -295,7 +295,7 @@ p
 	align-items:center;
 	-ms-flex-wrap:wrap;
 	flex-wrap:wrap;
-	margin: 0 10% 0 10%;
+	margin:0 10% 0 10%;
 	line-height:200%;
 	text-align:justify;
 }
@@ -545,6 +545,7 @@ justify-content:center;
     -webkit-box-direction:normal;
     -ms-flex-direction:column;
     flex-direction:column;
+    margin:0;
 }
 .logo 
 {  display:-webkit-box;  display:-ms-flexbox;  display:flex;
