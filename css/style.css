@@ -744,7 +744,7 @@ and (orientation:landscape){
     -webkit-box-direction:normal;
     -ms-flex-direction:column;
     flex-direction:column;
-    margin-bottom:5%;
+    margin:0 0 5% 0;
 }
   
 }
