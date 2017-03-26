@@ -712,6 +712,26 @@ flex-direction: column;
     text-decoration: none;
 }
 
+/*desire media*/
+@media only screen and (min-width:719px) and (min-height:1279px) and (max-width:722px) and(max-height:1282px) and (orientation:portrait)
+{     .foto img
+      {
+          max-height:160px;
+          margin-top:5%;
+      }
+    
+    .text
+    {
+        padding:0;
+        margin-top:5%;
+        font-size:80%;
+    }
+
+    .welcome-stuff
+    {
+        padding:4%;
+    }
+}
 /*nexus 5x*/
 @media only screen
 and (min-height: 361px)
@@ -1210,7 +1230,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /*desire media*/
-@media only screen and (min-width:719px) and (min-height:1279px) and (max-width:721px) and(max-height:1282px)
+@media only screen and (min-width:719px) and (min-height:1279px) and (max-width:722px) and(max-height:1282px) and (orientation:portrait)
 {     .foto img
       {
           max-height:160px;
