@@ -125,7 +125,17 @@ p
 	text-align:justify;
 }
 
-
+.about
+{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size:5rem;
+    margin:0;
+}
 	.page-footer
 	{	margin:0;
         
@@ -227,12 +237,13 @@ p
     align-items: center;
     -ms-flex-wrap:wrap;
     flex-wrap:wrap;
-    font-size:5em;
+    font-size:5rem;
     -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
     -ms-flex-direction:column;
     flex-direction:column;
     margin:0;
+    padding:2% 0;
 }
 .logo 
 {  display:-webkit-box;  display:-ms-flexbox;  display:flex;
@@ -433,7 +444,7 @@ and (orientation:landscape){
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-size:2rem;
+    font-size:3rem;
     -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
     -ms-flex-direction:column;
@@ -460,8 +471,14 @@ and (orientation:landscape){
         background-position: top center;
         
     }
+    .about
+    {
+        font-size:3rem;
+    }
   
 }
+
+
 /*ipad landscape*/
 @media only screen
 and (min-height: 750px)
@@ -509,7 +526,7 @@ and (orientation:landscape){
       .text
       {
           margin:0;
-          font-size:1rem;
+          font-size:1.5rem;
           
       }
 .images-desc
@@ -520,7 +537,7 @@ and (orientation:landscape){
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-size:1.2rem;
+    font-size:1.5rem;
     -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
     -ms-flex-direction:column;
@@ -564,6 +581,12 @@ and (orientation:landscape){
         height:300px;
         
     }
+      
+      .about
+    {
+        font-size:3rem;
+    }
+  
 }
 /*iphone 5 landscape*/
 @media only screen 
@@ -601,6 +624,12 @@ and (orientation:landscape){
     flex-direction:column;
     margin-bottom:5%;
 }
+      
+      .about
+    {
+        font-size:3rem;
+    }
+  
 }
 /*ipad media*/
 @media only screen 
@@ -669,8 +698,21 @@ and (orientation:landscape) {
       }
     
 }
+/*galaxy s5 portrait*/
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    
+    .text
+    {
+        font-size:2rem;
+    }
+    
+    .about
+    {
+        font-size:3rem
+    }
 /*galaxy s5 landscape*/
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+/*@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
       .foto img
       {
           max-height:160px;
@@ -685,6 +727,7 @@ and (orientation:landscape) {
     {
         padding:0;
         margin-top:5%;
+        font-size:1.5rem;
     }
 
     
@@ -709,7 +752,12 @@ and (orientation:landscape) {
     -ms-flex-direction:column;
     flex-direction:column;
 }
-}
+    .about
+    {
+        font-size:3rem;
+    }
+  
+}*/
 /*nexus 6p portrait*/
 @media only screen
 and (min-width: 412px)
@@ -762,6 +810,11 @@ and (orientation:portrait) {
         height:300px;
         
     }
+    .about
+    {
+        font-size:3rem;
+    }
+  
 
 
 }
@@ -811,6 +864,11 @@ and (orientation:landscape){
     -ms-flex-direction:column;
     flex-direction:column;
 }
+    .about
+    {
+        font-size:1.5rem;
+    }
+  
  
 }
 
@@ -858,6 +916,11 @@ and (orientation:landscape){
     -ms-flex-direction:column;
     flex-direction:column;
 }
+    .about
+    {
+        font-size:2rem;
+    }
+  
 }
 /*iphone 6 */
 @media only screen
@@ -910,6 +973,11 @@ and (orientation:portrait) {
         height:300px;
         
     }
+    .about
+    {
+        font-size:3rem;
+    }
+  
 
 }
 /*galaxy s5 landscape and iphone 6*/
@@ -957,6 +1025,11 @@ and (orientation:landscape){
     -ms-flex-direction:column;
     flex-direction:column;
 }
+    .about
+    {
+        font-size:3rem;
+    }
+  
 }
 /*ipad 3&4 media landscape*/
 @media only screen 
