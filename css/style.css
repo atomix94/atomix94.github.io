@@ -375,10 +375,10 @@ flex-direction: column;
     height:72%;
     padding:0;
     margin:0;
-   
+   width:100%;
      background-color:rgba(0,0,0,0.6);
    
-    
+    z-index:9999999;
     color:white;
    cursor: pointer;
     
