@@ -338,6 +338,14 @@ flex-direction: column;
     background-repeat: no-repeat;
     background-size:350px 250px;
 }
+.scale-wrapper:nth-child(3)
+{
+    
+     background-image: url("t.jpg");
+    background-repeat: no-repeat;
+    background-size:350px 250px;
+    
+}
 .scale-wrapper p
 {
     display:none;
@@ -413,7 +421,13 @@ flex-direction: column;
     width:100%;
 }
 
-
+@media (max-width:739px)
+{
+    p
+    {
+        text-align: left;
+    }
+}
 /*nexus 5x*/
 @media only screen
 and (min-height: 361px)
