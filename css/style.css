@@ -91,7 +91,7 @@ text-align:center;
 }
 .text
 {
-    padding:2% 5%;
+    padding:1% 4%;
     font-size:1.5rem;
 }
 .wrapper
@@ -137,7 +137,17 @@ p
     font-size:5rem;
     margin:0;
 }
-	.page-footer
+
+.name
+{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    margin:0;
+}
+    
+    
+    .page-footer
 	{	margin:0;
         
 		display:-webkit-box;		display:-ms-flexbox;		display:flex;
@@ -537,7 +547,11 @@ and (orientation:landscape){
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
       
-      
+      h1
+
+      {
+          font-size:175%;
+      }
       .text
       {
           margin:0;
