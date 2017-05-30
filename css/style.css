@@ -144,6 +144,7 @@ p
     display:flex;
     justify-content: center;
     margin:0;
+    
 }
     
     
@@ -276,7 +277,7 @@ p
 
 .logo-image
 {
-     width:15vw;
+     
    height:30vh;
     margin:0 4% 4% 4%;
    
@@ -431,13 +432,34 @@ flex-direction: column;
     width:100%;
 }
 
-@media (max-width:739px)
+
+@media (max-width:759px)
 {
     p
     {
         text-align: left;
     }
+    .images-desc
+    {
+        font-size:3rem;
+    }
 }
+@media (max-width:631px)
+{
+    .images-desc
+    {
+        font-size:2rem;
+    }
+}
+@media only screen and (min-width:750px)
+{
+    .name
+    {
+        font-size:2.5rem;
+    }
+    
+}
+
 /*nexus 5x*/
 @media only screen
 and (min-height: 361px)
@@ -508,7 +530,7 @@ and (orientation:landscape){
 @media only screen
 and (min-height: 750px)
 and (max-height: 768px)
-and (min-width: 1000px)
+and (min-width: 720px)
 and (max-width: 1024px)
 and (orientation:landscape){
     
