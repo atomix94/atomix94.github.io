@@ -263,12 +263,14 @@ p
     height:auto;
     -webkit-box-pack:center;
     -ms-flex-pack:center;
-    justify-content:center;
+    justify-content:space-around;
    -webkit-box-flex:1;
    -ms-flex:1;
    flex:1;
     -ms-flex-wrap:wrap;
     flex-wrap:wrap;
+ 
+    
     
     
     
@@ -357,6 +359,15 @@ flex-direction: column;
     background-size:350px 250px;
     
 }
+
+.scale-wrapper:nth-child(4)
+{
+    
+    
+     background-image: url("fourth_icon.jpg");
+    background-repeat: no-repeat;
+    background-size:350px 250px;
+}
 .scale-wrapper p
 {
     display:none;
@@ -371,6 +382,12 @@ flex-direction: column;
     background-color: black;
     opacity:1;
     
+}
+
+.logo-image
+{
+    max-width:350px;
+    max-height: 350px;
 }
 .scale-wrapper:hover p
 {
