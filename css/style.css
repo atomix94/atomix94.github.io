@@ -672,7 +672,7 @@ and (orientation:landscape){
     }
     .portfolio-images
     {
-        height:300px;
+        
         width:288px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -685,7 +685,7 @@ and (orientation:landscape){
         background-size: cover;
         background-position: top center;
         width:100%;
-        margin-bottom:2%;
+        margin-bottom:5%;
         height:300px;
         
     }
@@ -787,7 +787,7 @@ and (max-device-width : 1366px) and (orientation:portrait) {
 }
 
 /*ipad pro landscape*/
-@media only screen 
+@media only screen and(min-width:1024px)
 and (max-device-width : 1366px) 
 and (orientation:landscape) { 
 
@@ -819,6 +819,13 @@ and (orientation:landscape) {
     {
         font-size:3rem
     }
+    
+    .portfolio-images
+    {
+        height:auto;
+    }
+    
+    
 /*galaxy s5 landscape*/
 /*@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
       .foto img
@@ -1064,7 +1071,6 @@ and (orientation:portrait) {
     }
     .portfolio-images
     {
-        height:300px;
         width:288px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1168,6 +1174,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 }
 
+    
 /*desire media*/
 @media only screen and (min-width:719px) and (min-height:1279px) and (max-width:722px) and(max-height:1282px) and (orientation:portrait)
 {     .foto img
@@ -1188,3 +1195,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
         padding:4%;
     }
 }
+    
+    @media only screen and (max-device-width:645px) and (orientation:landscape)
+    {
+       .text
+        {
+            font-size:1.5rem;
+        }
+        
+    }
