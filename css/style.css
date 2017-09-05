@@ -13,7 +13,14 @@ body
 
 
 
-
+.parallax_wrapper
+{
+    
+    position: absolute;
+    top:100vh;
+    z-index:99999;
+    background-color:white;
+}
 
 
 
@@ -26,6 +33,7 @@ body
 	background-attachment:fixed;
 	height:100vh;
     background-position: center;
+    position:fixed;
     
     
     }
