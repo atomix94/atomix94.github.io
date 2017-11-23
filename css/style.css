@@ -417,6 +417,23 @@ p {
     background-size: 350px 250px;
 }
 
+.scale-wrapper:nth-child(5) {
+
+
+    background-image: url("fifth_icon.png");
+    background-repeat: no-repeat;
+    background-size: 350px 250px;
+}
+
+
+.scale-wrapper:nth-child(6) {
+
+
+    background-image: url("sixth_icon.png");
+    background-repeat: no-repeat;
+    background-size: 350px 250px;
+}
+
 .scale-wrapper p {
     display: none;
 
